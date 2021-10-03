@@ -1,2 +1,2 @@
 # Tanks-2021
-Мой курсовой проект за 4 семестр
+Tank game for 1 or 2 players
