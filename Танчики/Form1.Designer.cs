@@ -64,7 +64,7 @@ namespace Танчики
             this.TicsLabel.AutoSize = true;
             this.TicsLabel.Location = new System.Drawing.Point(431, 634);
             this.TicsLabel.Name = "TicsLabel";
-            this.TicsLabel.Size = new System.Drawing.Size(38, 17);
+            this.TicsLabel.Size = new System.Drawing.Size(36, 16);
             this.TicsLabel.TabIndex = 0;
             this.TicsLabel.Text = "Tics:";
             // 
@@ -73,7 +73,7 @@ namespace Танчики
             this.ScoreLabel.AutoSize = true;
             this.ScoreLabel.Location = new System.Drawing.Point(15, 634);
             this.ScoreLabel.Name = "ScoreLabel";
-            this.ScoreLabel.Size = new System.Drawing.Size(44, 17);
+            this.ScoreLabel.Size = new System.Drawing.Size(42, 16);
             this.ScoreLabel.TabIndex = 1;
             this.ScoreLabel.Text = "Счет:";
             // 
@@ -82,7 +82,7 @@ namespace Танчики
             this.Health1Label.AutoSize = true;
             this.Health1Label.Location = new System.Drawing.Point(100, 634);
             this.Health1Label.Name = "Health1Label";
-            this.Health1Label.Size = new System.Drawing.Size(91, 17);
+            this.Health1Label.Size = new System.Drawing.Size(88, 16);
             this.Health1Label.TabIndex = 2;
             this.Health1Label.Text = "Прочность1:";
             // 
@@ -91,7 +91,7 @@ namespace Танчики
             this.Health2Label.AutoSize = true;
             this.Health2Label.Location = new System.Drawing.Point(248, 634);
             this.Health2Label.Name = "Health2Label";
-            this.Health2Label.Size = new System.Drawing.Size(91, 17);
+            this.Health2Label.Size = new System.Drawing.Size(88, 16);
             this.Health2Label.TabIndex = 3;
             this.Health2Label.Text = "Прочность2:";
             // 
@@ -124,7 +124,7 @@ namespace Танчики
             // 
             this.новаяИгра1pToolStripMenuItem.Image = global::Танчики.Resource1.PlayIcon;
             this.новаяИгра1pToolStripMenuItem.Name = "новаяИгра1pToolStripMenuItem";
-            this.новаяИгра1pToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.новаяИгра1pToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
             this.новаяИгра1pToolStripMenuItem.Text = "Новая игра 1p";
             this.новаяИгра1pToolStripMenuItem.Click += new System.EventHandler(this.NewGameButtomClick);
             // 
@@ -132,7 +132,7 @@ namespace Танчики
             // 
             this.новаяИгра2pToolStripMenuItem1.Image = global::Танчики.Resource1.PlayIcon;
             this.новаяИгра2pToolStripMenuItem1.Name = "новаяИгра2pToolStripMenuItem1";
-            this.новаяИгра2pToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.новаяИгра2pToolStripMenuItem1.Size = new System.Drawing.Size(193, 26);
             this.новаяИгра2pToolStripMenuItem1.Text = "Новая игра 2p";
             this.новаяИгра2pToolStripMenuItem1.Click += new System.EventHandler(this.NewGame2p_Click);
             // 
@@ -162,14 +162,14 @@ namespace Танчики
             // обИгреToolStripMenuItem
             // 
             this.обИгреToolStripMenuItem.Name = "обИгреToolStripMenuItem";
-            this.обИгреToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
+            this.обИгреToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.обИгреToolStripMenuItem.Text = "Об игре";
             this.обИгреToolStripMenuItem.Click += new System.EventHandler(this.Information_Click);
             // 
             // управлениеToolStripMenuItem
             // 
             this.управлениеToolStripMenuItem.Name = "управлениеToolStripMenuItem";
-            this.управлениеToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
+            this.управлениеToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.управлениеToolStripMenuItem.Text = "Управление";
             this.управлениеToolStripMenuItem.Click += new System.EventHandler(this.управлениеToolStripMenuItem_Click);
             // 

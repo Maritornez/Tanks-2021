@@ -99,7 +99,8 @@ namespace Танчики
 			{
 				Console.WriteLine(e.Message);
 			}
-		}
+
+        }
 
 		private void timer1_Tick(object sender, EventArgs e)
 		{
@@ -366,11 +367,18 @@ namespace Танчики
 		//Таблица лидеров
 		private void LeaderTableButtonClick(object sender, EventArgs e)
 		{
+            //Console.WriteLine("{0, -10} {1, -15} {2, -20}", "Имя", "Фамилия", "Возраст");
+            //Console.WriteLine("{0, -10} {1, -15} {2, -20}", "John", "Doe", 30);
+            //Console.WriteLine("{0, -10} {1, -15} {2, -20}", "Jane", "Smith", 25);
+            //Console.WriteLine("{0, -10} {1, -15} {2, -20}", "Bob", "Johnson", 40);
 
-			FileInfo leaderTable = new FileInfo(_pathLeaderTable);
+            FormLeaders formLeaders = new FormLeaders();
+
+            FileInfo leaderTable = new FileInfo(_pathLeaderTable);
 			try
 			{
-				if (leaderTable.Exists)
+				string formatedTextForRichTextBox = "";
+                if (leaderTable.Exists)
 				{
 					List<GameResultsEntry> entries = new List<GameResultsEntry>();
 					using (BinaryReader binaryReader = new BinaryReader(new FileStream(_pathLeaderTable, FileMode.Open)))
@@ -383,14 +391,15 @@ namespace Танчики
 						}
 					}
 
-					string text = "№  Имя    Счет   Время(в тиках)\n\n";
-					for (int i = 0; i < _entryAmount; i++)
+                    for (int i = 0; i < _entryAmount; i++)
 					{
-						text += $"{i+1}. {entries[i]._name}  {entries[i]._score}  {entries[i]._tics}\n";
-					}
-					MessageBox.Show(text, "Таблица лидеров");
+                        formLeaders.dataGridViewLeadersTable.Rows.Add(i + 1, entries[i]._name, entries[i]._score, entries[i]._tics);
+                    }
 				}
-			}
+
+
+                formLeaders.Show();
+            }
 			catch (Exception ev)
 			{
 				Console.WriteLine(ev.Message);
